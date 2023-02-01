@@ -14,6 +14,4 @@ if game.PlaceId == 6441847031 then
     MainSection:NewButton("CHAOS HUB", "HUB", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/aidanlolol/MainScript/main/ChaosScriptVersionTwoPointOne.lua"))()
     end)
-    MainSection:NewButton("CHAOS OP", "idk", function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1111-ssss/Chaos_Script/main/Chaos_script.txt'))()
 end
