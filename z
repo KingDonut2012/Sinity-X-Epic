@@ -1,7 +1,6 @@
 if game.PlaceId == 6441847031 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("Techno Z HUB | CHAOS", "Sentinel")
-
-local Main = Window:NewTab("Main")
-local Main = Window:Main("Main")
-MainSection:NewLabel("Please join our discord server and get the new hub!")
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+    MainSection:NewLabel("Join our server for new hub!")
