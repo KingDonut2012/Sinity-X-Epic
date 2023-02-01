@@ -31,7 +31,7 @@ PlayerSection:NewButton("Godmode(broked,we will fix it)", "Invincible", function
 
 end)
 
-MainSection:NewButton("Fly GUI", "Gives you a fly GUI", function()
+MainSection:NewButton("Fly GUI(bugged)", "Gives you a fly GUI", function()
     -- Bring to you by DEVELOPER
 -- Enjoy the script!
  
