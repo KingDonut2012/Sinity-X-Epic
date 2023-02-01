@@ -1,6 +1,33 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Chaos hub | Made by DEVELOPER", "BloodTheme")
+
 if game.PlaceId == 6441847031 then
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Techno Z HUB | CHAOS", "Sentinel")
-    local Main = Window:NewTab("Main")
-    local MainSection = Main:NewSection("Main")
-    MainSection:NewLabel("Join our server for new hub!")
+-- MAIN
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("Credits")
+
+-- CREDITS
+CreditsSection:NewLabel("Progammed:RAMARIEI")
+CreditsSection:NewLabel("Edited:RAMARIEI")
+CreditsSection:NewLabel("Maked the HUB:RAMARIEI")
+CreditsSection:NewLabel("Scripted:RAMARIEI")
+
+-- PLAYER
+PlayerSection:NewSlider("Walkspeed", "Changes ws", 500, 16, function(v) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+
+end)
+
+PlayerSection:NewSlider("JumpPower", "Changes jp", 500, 50, function(v) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+end)
+
+PlayerSection:NewButton("Godmode(broked,we will fix it)", "Invincible", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/FwfNEqYz", true))()
+
+end)
+end
