@@ -1,0 +1,19 @@
+if game.PlaceId == 6441847031 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Techno Z HUB | CHAOS", "Sentinel")
+    local Main = Window:NewTab("Main")
+    local Player = Window:NewTab("Player")
+    local MainSection = Main:NewSection("Main")
+    local PlayerSection = Player:NewSection("Player")
+    PlayerSection:NewSlider("Walkspeed", "Change your speed", 250, 16, function(v) -- 250 (MaxValue) | 16 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+    end)
+    PlayerSection:NewSlider("Jumppower", "Changes ur Jumppower", 500, 50, function(v) -- 500 (MaxValue) | 50 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+    end)
+    MainSection:NewButton("CHAOS HUB", "HUB", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/aidanlolol/MainScript/main/ChaosScriptVersionTwoPointOne.lua"))()
+    end)
+    MainSection:NewButton("CHAOS OP", "idk", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/1111-ssss/Chaos_Script/main/Chaos_script.txt'))()
+end
