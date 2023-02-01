@@ -3,5 +3,5 @@ if game.PlaceId == 6441847031 then
     local Window = Library.CreateLib("Techno Z HUB | CHAOS", "Sentinel")
 
 local Main = Window:NewTab("Main")
-
+local Main = Window:Main("Main")
 MainSection:NewLabel("Please join our discord server and get the new hub!")
